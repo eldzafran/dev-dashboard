@@ -1,9 +1,12 @@
-/* Tambahkan ini jika ingin menambahkan custom styling untuk Tailwind CSS */
+/* Import Tailwind CSS */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-/* Contoh styling tambahan */
+/* Import Font Awesome */
+@import "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css";
+
+/* Tambahkan gaya kustom jika diperlukan */
 body {
     font-family: 'Inter', sans-serif;
 }

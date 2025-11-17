@@ -1,10 +1,15 @@
-// resources/js/app.js
-
+// Import file bootstrap.js untuk setup Laravel Mix dan Bootstrap (jika diperlukan)
 import './bootstrap';
+
+// Import Vue.js (opsional, jika kamu menggunakan Vue)
 import { createApp } from 'vue';
 
-// Tambahkan komponen Vue.js jika diperlukan
-const app = createApp({});
+// Membuat instance Vue dan menambahkan komponen (jika diperlukan)
+// const app = createApp({
+//     components: {
+//         // Daftarkan komponen Vue.js kamu di sini
+//     }
+// });
 
-// App components can go here if you plan to add Vue.js or other JS features
-app.mount("#app");
+// App components bisa ditempatkan di sini jika kamu ingin menambahkan interaktivitas lebih lanjut
+// app.mount('#app');
