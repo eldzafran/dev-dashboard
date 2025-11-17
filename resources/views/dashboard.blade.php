@@ -92,7 +92,13 @@
             <div class="mt-8 grid grid-cols-2 gap-6">
                 <!-- Test Case Progress (Left Side) -->
                 <div class="bg-white shadow-lg rounded-lg p-6">
-                    <h2 class="text-2xl font-semibold mb-4">Test Case Progress</h2>
+                    <div class="flex justify-between items-center">
+                        <h2 class="text-2xl font-semibold mb-4">Test Case Progress</h2>
+                        <!-- Run Test Button -->
+                        <button class="bg-blue-500 text-white py-2 px-4 rounded-lg hover:bg-blue-600">
+                            Run Test
+                        </button>
+                    </div>
                     <div class="space-y-4">
                         @foreach($data['test_case_progress'] as $test)
                             <div class="flex items-center space-x-4">
@@ -115,11 +121,19 @@
                             </div>
                         @endforeach
                     </div>
+                    <!-- View All Button -->
+                    <div class="mt-4 text-center">
+                        <button class="text-blue-600 hover:text-blue-800">View All</button>
+                    </div>
                 </div>
 
                 <!-- Active API Services (Right Side) -->
                 <div class="bg-white shadow-lg rounded-lg p-6">
-                    <h2 class="text-2xl font-semibold mb-4">Active API Services</h2>
+                    <div class="flex justify-between items-center">
+                        <h2 class="text-2xl font-semibold mb-4">Active API Services</h2>
+                        <!-- View All Button -->
+                        <button class="text-blue-600 hover:text-blue-800">View All</button>
+                    </div>
                     <div class="space-y-4">
                         @foreach($data['active_api_services'] as $service)
                             <div class="flex items-center space-x-4">
