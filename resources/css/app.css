@@ -1,0 +1,9 @@
+/* Tambahkan ini jika ingin menambahkan custom styling untuk Tailwind CSS */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Contoh styling tambahan */
+body {
+    font-family: 'Inter', sans-serif;
+}
